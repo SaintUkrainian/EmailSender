@@ -68,7 +68,7 @@ public class Sender {
         Content content = new Content("text/plain", sender.getEmail() + " - emailed from." + "\n" + sender.getContent());
         Mail mail = new Mail(from, subject, to, content);
 
-        SendGrid sg = new SendGrid("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");
+        SendGrid sg = new SendGrid("Your API Key");
         Request request = new Request();
         try {
             request.setMethod(Method.POST);
